@@ -29,6 +29,12 @@ This project provides a user-friendly interface for comparing two Excel files co
 4. **View Results**:
    - Once the comparison is completed, a text file (.txt) named `result_file` will be downloaded to your device. You can analyze the results from this file.
 
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+
 ## Contributions
 
 Contributions to this project are welcome. If you find any issues or have suggestions for improvements, feel free to create a pull request or raise an issue in the [GitHub repository](https://github.com/Ak-Nobelwolf/Excel-Comparison).
