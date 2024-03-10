@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instructions</title>
+    <link rel="icon" href="../images/insturctions.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="instructions-container">
+        <h1>Instructions to Use the Excel Compare Tool</h1>
+        <ol>
+          <li>
+            Select your Source, Target, and Property files from your device
+            using the file input fields provided.
+          </li>
+          <li>
+            Ensure that your source and target files are in either
+            <strong>.xlsx</strong> or <strong>.xls</strong> format, and your
+            property file is in <strong>.properties</strong> format.
+          </li>
+          <li>
+            The Property file should contain properties such as:
+            <ul>
+              <li>
+                <strong>sourceColumns</strong>: Names of columns in the source
+                file, separated by commas.
+                <br />
+                For example:
+                <br />
+                <code>sourceColumns=Name, Address, Age </code>
+              </li>
+              <li>
+                <strong>targetColumns</strong>: Names of corresponding columns
+                in the target file, separated by commas.
+                <br />
+                For example:
+                <br />
+                <code>targetColumns=Name, Address, Age </code>
+              </li>
+            </ul>
+            Create the Property file using a text editor and save it with a
+            <strong>.properties</strong> extension.
+          </li>
+          <li>
+            Click the <strong>"Compare Files"</strong> button to start the
+            comparison process.
+          </li>
+          <li>
+            As soon as the comparison is completed, a <strong>text file</strong>
+            (.txt) format will be downloaded to your device with the filename
+            <strong>result_file</strong>, from which you can analyze the
+            results.
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- <section>
+      <div class="video-container">
+        <h2>Watch this brief demo to see how the Tool works in action.</h2>
+        <video controls>
+          <source src="../videos/demo.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section> -->
+  </body>
+</html>
