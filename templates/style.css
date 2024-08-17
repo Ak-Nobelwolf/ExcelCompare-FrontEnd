@@ -62,20 +62,26 @@ input[type="file"]:hover {
 }
 
 /* Style the heading */
-h1 {
+h1, h2 {
   text-align: center;
   text-transform: capitalize;
   color: black;
 }
 
-/* Style the button */
+/* Style the buttons container */
+.button-container {
+  display: flex; /* Use flexbox layout */
+  justify-content: space-between; /* Space between the buttons */
+}
+
+/* Style the individual buttons */
 button {
   background-color: #4caf50;
   color: black;
   padding: 12px 20px;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: calc(50% - 10px); /* Set the width to 50% of the container width minus spacing */
   border-radius: 5px;
   font-size: 1.1em;
   font-weight: bold;
@@ -117,7 +123,7 @@ a:hover {
 }
 
 /* Styling for the instructions container */
-.instructions-container {
+.instructions-container, .video-container {
   font-family: Arial, sans-serif;
   max-width: 800px;
   margin: 20px auto;
@@ -128,7 +134,7 @@ a:hover {
 }
 
 /* Add left padding to the ordered list */
-ol {
+ol, ul {
   padding-left: 20px;
 }
 
@@ -138,26 +144,23 @@ li {
   text-align: justify;
 }
 
-/* CSS for Video Container */
-h2 {
-  text-align: center;
-  text-transform: capitalize;
-  color: black;
-}
-
-.video-container {
-  font-family: Arial, sans-serif;
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
 .video-container video {
   width: 100%;
   height: auto;
+}
+
+#successMessage {
+  display: none;
+  background-color: #d4edda; /* Green background */
+  border-color: #c3e6cb; /* Green border */
+  color: #155724; /* Green text color */
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+#successMessage p{
+  text-align:center;
 }
 
 /* Media query for smaller screens */
@@ -180,3 +183,13 @@ h2 {
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  .button-container {
+    display: inline;
+  }
+
+  button {
+    width: 100%;
+    margin-bottom:10px;
+  }
+}
